@@ -12,10 +12,15 @@
     ...
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script src="jquery.smartbanner.js"></script>
-    <script type="text/javascript">
-$(function () {
-    $.smartbanner();
-});
-    </script>
+<script type="text/javascript">
+                $.smartbanner({
+                    title: 'YouTube',
+                    author: 'Google, Inc.',
+                    icon: 'http://a5.mzstatic.com/us/r1000/075/Features/v4/db/46/90/db4690bd-efd7-7146-ccda-2907d6412e25/mza_2095397568113465042.175x175-75.jpg',
+                    force: android ? 'android' : 'ios',
+                    daysHidden: 0,
+                    daysReminder: 0
+                });
+            </script>
   </body>
 </html>
